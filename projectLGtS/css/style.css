@@ -7,8 +7,9 @@
 
 body {
   background: url("../img/background.png") no-repeat top center;
-  background-size: 100%
+  background-size: 100%;
 }
+/* header start*/
 
 header ul {
   text-align: right;
@@ -18,32 +19,54 @@ header ul {
   margin: 0 0 0 19rem;
 }
 
+li a {
+  color: 
+}
+
 .margin-nav {
+  font-size: 90%;
+  text-align: center;
+  text-transform: uppercase;
   margin: 0 0 0 1rem;
 }
 
+/*header end*/
+
+/* main start*/
+
+main {
+}
+
 section {
-  text-align: center;
 }
 
 .project {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(6, 255px);
-  grid-gap: 10px;
-  grid-template-rows: repeat(7, 100px);
+
 }
 
 .project-info {
-  background: #f2f2;
-  grid-column: 2 / 4;
-  grid-row: 2 / 4;
+}
+
+.project-info h1 {
+  position: relative;
+  top: 1em;
+  left: 3em;
+}
+
+.project-info button {
+  position: relative;
+  top: 5em;
+  left: 8em;
+  margin: 0 2em 0 0;
 }
 
 .project-img {
-  background: #f2f;
-  grid-column: 4 / 7;
-  grid-row: 2 / 8;
+}
+
+.project-img img {
+  width: 90%;
+  position: relative;
+  right: 2em;
 }
 
 .btn {
@@ -55,4 +78,123 @@ section {
 
 p {
   height: 300px;
+}
+
+/*main end*/
+
+@media only all and (max-width: 1200px) {
+  ul {
+    position: relative;
+    top: 0em;
+    right: 10em;
+  }
+
+  .navbar-btn {
+    position: relative;
+    top: 0em;
+    right: 12em;
+  }
+
+  li .margin-nav {
+    text-align: center;
+    margin: 0.1em;
+    width: 110px;
+    padding: 20px;
+  }
+
+  .project-info h1 {
+    position: relative;
+    top: 1em;
+    left: 1.5em;
+    width: 10em;
+  }
+  
+  .project-info button {
+    position: relative;
+    top: 5em;
+    left: 4em;
+    margin: 0 1em 0 0;
+  }
+
+  .project-img img {
+    width: 90%;
+    position: relative;
+    left: 0em;
+  }
+}
+
+@media only all and (max-width: 1170px) {
+  body {
+    background-size: 1170px;
+  }
+
+  ul {
+    position: relative;
+    top: 0em;
+    left: 1em;
+  }
+
+  .navbar-mar {
+    margin: 0 0 0 6rem;
+  }
+
+  li .margin-nav {
+    text-align: center;
+    margin: 0.1em;
+    width: 116px;
+    padding: 20px;
+  }
+
+  .navbar-btn {
+    position: relative;
+    top: 0em;
+    right: 1em;
+  }
+
+  .project-img img {
+    width: 90%;
+    position: relative;
+    left: 1em;
+  }
+}
+
+@media only all and (max-width: 991px) {
+ #navbarSupportedContent {
+  margin: 0;
+ }
+ .navbar-btn {
+   margin: 0;
+ }
+
+ .project-info h1 {
+  position: relative;
+  top: 1em;
+  left: 1em;
+  width: 8em;
+}
+.project-info button {
+  width: 200px;
+}
+
+.project-info button.btn-client {
+  position: relative;
+  top: 4em;
+  left: 3em;
+  margin: 0 1em 0 0;
+}
+
+.project-info button.btn-start {
+  position: relative;
+  top: 7em;
+  left: -10.6em;
+  margin: 0 1em 0 0;
+}
+
+.project-img img {
+  width: 70%;
+  position: relative;
+  bottom: 13em;
+  left: 12em;
+}
+
 }
