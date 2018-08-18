@@ -76,11 +76,7 @@ section {
   left: 5.3em;
 }
 
-object {
-  display: none;
-}
-
-.project-img img {
+.obj-img {
   width: 90%;
   position: relative;
   right: 0em;
@@ -144,16 +140,17 @@ p {
     margin: 0 3em 0 0;
   }
 
-  .project-img img {
-    width: 100%;
+  object {
+    width: 40em;
     position: relative;
-    left:0.75em;
+    left: 0.5em;
   }
+
 }
 
 @media only all and (max-width: 1200px) {
   body {
-    background-size: 1200px;
+    background-size: 1500px;
   }
 
   .navbar {
@@ -182,8 +179,8 @@ p {
 
   .project-info h1 {
     position: relative;
-    top: 1em;
-    left: 1em;
+    top: 1.5em;
+    left: 0;
     width: 10em;
   }
   
@@ -194,8 +191,8 @@ p {
     margin: 0 1em 0 0;
   }
 
-  .project-img img {
-    width: 90%;
+  object {
+    width: 35em;
     position: relative;
     left: 1.5em;
   }
@@ -244,13 +241,15 @@ p {
 
   .project-info button.btn-client {
     position: relative;
-    top: 5em;
-    left: 2.8em;
+    top: 8.5em;
+    left: .1em;
     margin: 0 20px 0 0;
   }
 
   .project-info button.btn-start {
     position: relative;
+    top: 8.3em;
+    left: 2em;
     margin: 0;
   }
 
