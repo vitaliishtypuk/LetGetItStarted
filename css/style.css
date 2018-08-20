@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +9,12 @@
 
 body {
   background: url("../img/illustration&background.svg") no-repeat top center;
-  background-size: 100%;
 }
 /* header start*/
 
 
 
-.navbar {
+/*.navbar {
   padding-top: 15px;
   padding-bottom: 0px;
 }
@@ -32,9 +34,7 @@ li a {
   margin: 0 0 0 5px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.9);
-}
+
 
 .navbar-light:hover,
 .navbar-nav:hover, 
@@ -64,7 +64,7 @@ section {
 .project-info {
 }
 
-.project-info h1 {
+/*.project-info h1 {
   position: relative;
   top: 1em;
   left: 2em;
@@ -80,14 +80,35 @@ section {
   width: 90%;
   position: relative;
   right: 0em;
+}*/
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light:hover,
+.navbar-nav:hover, 
+.nav-link:hover {
+  color: #1e0e61;
+}
+
+.navbar-light:active,
+.navbar-nav:active, 
+.nav-link:active {
+  color: #1e0e61;
+  text-shadow: 0 0 15px rgba(69,155,191,0.9);
 }
 
 .btn {
+  display: inline-block;
   text-transform: uppercase;
-  border-radius: 1.2rem;
-  padding: .6rem 2rem;
+  font-size: 120%;
+  border-radius: 2em;
+  padding: .7em 2.5em;
   border: 1px solid rgb(0, 0, 0);
   background: -webkit-gradient(linear, 0 0, 100 100%, from(#4222f7), to(#f77c33));
+  transition: 0.2s;
 }
 
 .navbar-btn {
@@ -95,12 +116,54 @@ section {
   border: 1px solid #ffffff;
 }
 
-.btn-client {
+.navbar-btn:hover {
+  color: #1e0e61;
+  border: 1px solid #1e0e61;
   background: #ffffff;
 }
+
+.navbar-btn:active {
+  color:#ffffff;
+  border: none;
+  background: #60cbf3;
+  box-shadow:0 0 0 5px rgba(69,155,191,0.5);
+}
+
+.btn-client {
+  background: #ffffff;
+  color: #1e0e61;
+  border: 1px solid #1e0e61;
+}
+
+.btn-client:hover {
+  color:#ffffff;
+  border: none;
+  background: #60cbf3;
+}
+
+.btn-client:active {
+  color:#ffffff;
+  border: none;
+  background: #206aff;
+  box-shadow:0 0 0 5px rgba(69,155,191,0.5);
+}
+
 .btn-start {
   color:#ffffff;
   border: none;
+}
+
+.btn-start:hover {
+  color: #1e0e61;
+  border: 1px solid #1e0e61;
+  background: #ffffff;
+}
+
+.btn-start:active {
+  color:#ffffff;
+  border: none;
+  background: #206aff;
+  box-shadow:0 0 0 5px rgba(69,155,191,0.5);
 }
 
 p {
@@ -109,7 +172,326 @@ p {
 
 /*main end*/
 
-@media only all and (min-width: 1200px) {
+
+@media (min-width: 1400px) {
+  body {
+    background-size: 1920px;
+  }
+
+  nav {
+    margin: 12px 0 0 0;
+  }
+
+  .navbar-brand {
+    position: relative;
+    right: 12em;
+  }
+
+  .navbar-btn {
+    position: relative;
+    left: 8em;
+    margin: 0 0 0 5px;
+  }
+  .collapse {
+    position: relative;
+    left: 20em;
+  }
+
+  .margin-nav-wp,
+  .margin-nav-cs,
+  .margin-nav-ot,
+  .margin-nav-co {
+    font-size: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 9em;
+    margin: 0 0 0 5px;
+    position: relative;
+    left: 7.5em;
+  }
+
+  .margin-nav-ot,
+  .margin-nav-co {
+    width: 6em;
+  }
+
+  .project-info h1 {
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 1.5em;
+    right: 0.7em;
+    font-size: 3.9em;
+    width: 10em;
+  }
+
+  .project-info h1 b {
+    font-family: 'Rubik', sans-serif;
+    color: #1e0e61;
+  }
+  
+  .project-btn {
+    width: 15em;
+  }
+
+  .row .project-btn {
+    position: relative;
+    top: 9.3em;
+    right: 2.5em;
+    margin: 0 0 0 0;
+  }
+
+  .btn-start {
+    position: relative;
+    top: 0;
+    left: 2.5em;
+  }
+
+  object {
+    width: 43em;
+    position: relative;
+    top: 1.7em;
+    left: 3.7em;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-size: 2100px;
+  }
+
+  nav {
+    margin: 12px 0 0 0;
+  }
+
+  .navbar-brand {
+    position: relative;
+    right: 12em;
+  }
+
+  .navbar-btn {
+    position: relative;
+    left: 7em;
+    margin: 0 0 0 5px;
+  }
+  .collapse {
+    position: relative;
+    left: 20em;
+  }
+
+  .margin-nav-wp,
+  .margin-nav-cs,
+  .margin-nav-ot,
+  .margin-nav-co {
+    font-size: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 9em;
+    margin: 0 0 0 5px;
+    position: relative;
+    left: 7.5em;
+  }
+
+  .project-info h1 {
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 1.9em;
+    right: 1.2em;
+    font-size: 3.9em;
+    width: 10em;
+  }
+
+  .project-info h1 b {
+    font-family: 'Rubik', sans-serif;
+    color: #1e0e61;
+  }
+  
+  .project-btn {
+    width: 15em;
+  }
+
+  .row .project-btn {
+    position: relative;
+    top: 11.4em;
+    right: 4.3em;
+    margin: 0 0 0 0;
+  }
+
+  .btn-start {
+    position: relative;
+    top: 0;
+    left: 2.5em;
+  }
+
+  object {
+    width: 45em;
+    position: relative;
+    top: 2.8em;
+    left: 5em;
+  }
+
+}
+
+@media only all and (min-width: 2300px) {
+  body {
+    background-size: 2600px;
+  }
+
+  nav {
+    margin: 12px 0 0 0;
+  }
+
+  .navbar-brand {
+    position: relative;
+    right: 12em;
+  }
+
+  .navbar-btn {
+    position: relative;
+    left: 2em;
+    margin: 0 0 0 5px;
+  }
+  .collapse {
+    position: relative;
+    left: 36em;
+  }
+
+  .margin-nav-wp,
+  .margin-nav-cs,
+  .margin-nav-ot,
+  .margin-nav-co {
+    font-size: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 9em;
+    margin: 0 5px 0 0 ;
+    position: relative;
+    left: 1.2em;
+  }
+
+  .project-info h1 {
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 3em;
+    right: 2.5em;
+    font-size: 3.9em;
+    width: 10em;
+  }
+
+  .project-info h1 b {
+    font-family: 'Rubik', sans-serif;
+    color: #1e0e61;
+  }
+  
+  .project-btn {
+    width: 15em;
+  }
+
+  .row .project-btn {
+    position: relative;
+    top: 18.5em;
+    right: 9.2em;
+    margin: 0 0 0 0;
+  }
+
+  .btn-start {
+    position: relative;
+    top: 0;
+    left: 2.5em;
+  }
+
+  object {
+    width: 58em;
+    position: relative;
+    top: 4.2em;
+    left: 3.5em;
+  }
+
+}
+
+@media (max-width: 1399px) {
+  body {
+    background-size: 1600px;
+  }
+
+  nav {
+    margin: 12px 0 0 0;
+  }
+
+  .navbar-brand {
+    position: relative;
+    right: 12em;
+  }
+
+  .navbar-btn {
+    font-size: 100%;
+    position: relative;
+    left: 15em;
+    margin: 0 0 0 5px;
+  }
+  .collapse {
+    position: relative;
+    left: 20em;
+  }
+
+  .margin-nav-wp,
+  .margin-nav-cs,
+  .margin-nav-ot,
+  .margin-nav-co {
+    font-size: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 9em;
+    margin: 0 0 0 5px;
+    position: relative;
+    left: 13.7em;
+  }
+
+  .margin-nav-ot,
+  .margin-nav-co {
+    width: 6em;
+  }
+
+  .project-info h1 {
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 1.7em;
+    left: 1.2em;
+    font-size: 2.9em;
+    width: 10em;
+  }
+
+  .project-info h1 b {
+    font-family: 'Rubik', sans-serif;
+    color: #1e0e61;
+  }
+  
+  .project-btn {
+    width: 15em;
+  }
+
+  .row .project-btn {
+    position: relative;
+    font-size: 80%;
+    top: 11.3em;
+    left: 5em;
+    margin: 0 0 0 0;
+  }
+
+  .btn-start {
+    position: relative;
+    top: 0;
+    left: 2.5em;
+  }
+
+  object {
+    width: 40em;
+    position: relative;
+    top: .3em;
+    left: 1.4em;
+  }
+}
+
+/*@media only all and (min-width: 1200px) {
   body {
     background-size: 1600px;
   }
@@ -146,9 +528,9 @@ p {
     left: 0.5em;
   }
 
-}
+}*/
 
-@media only all and (max-width: 1200px) {
+/*@media only all and (max-width: 1200px) {
   body {
     background-size: 1500px;
   }
@@ -253,9 +635,9 @@ p {
     margin: 0;
   }
 
-}
+}*/
 
-@media only all and (max-width: 991px) {
+/*@media only all and (max-width: 991px) {
   #navbarSupportedContent {
     margin: 0;
   }
@@ -293,4 +675,4 @@ p {
     bottom: 13em;
     left: 12em;
   }
-}
+}*/
